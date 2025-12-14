@@ -10,11 +10,13 @@
             android:memtagMode="async">
         <activity android:name=".PdfViewer"
                 android:documentLaunchMode="always"
-                android:exported="true">
-            <intent-filter>
+                android:exported="true"
+                android:screenOrientation="portrait"> <!-- Portrait-only mode -->
+                <!-- Disable launcher activity -->
+            <!-- <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter> -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
